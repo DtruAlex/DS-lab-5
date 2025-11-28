@@ -15,4 +15,4 @@ async def say_hello(name: str):
 @app.get("/time")
 async def time():
     from datetime import datetime
-    return {"time": datetime.utcnow().isoformat()}
+    return {"time": datetime.now().isoformat()}
